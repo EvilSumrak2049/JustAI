@@ -33,7 +33,7 @@ class SimpleActionExample(Task):
     def __init__(self, config: BaseModel, service_sdk: MlpServiceSDK = None) -> None:
         super().__init__(config, service_sdk)
 
-    async def extract_entities(request: TextRequestModel):
+    async def extract_entities(self, request: TextRequestModel):
         entities_list = []
 
         for text in request.texts:

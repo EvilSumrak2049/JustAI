@@ -1,7 +1,7 @@
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI
 from pydantic import BaseModel
-from typing import List, Dict, Any
-from model import chain, generate_answer
+from typing import List
+from src.model import chain, generate_answer
 app = FastAPI()
 
 

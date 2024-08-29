@@ -2,7 +2,7 @@ import requests, zipfile, io
 import argparse
 import os
 import re
-from model import chain
+from src.model import chain
 
 r = requests.get('http://www.labinform.ru/pub/named_entities/collection5.zip')
 z = zipfile.ZipFile(io.BytesIO(r.content))

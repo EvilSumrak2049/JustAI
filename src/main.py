@@ -3,7 +3,7 @@ from mlp_sdk.hosting.host import host_mlp_cloud
 from mlp_sdk.transport.MlpServiceSDK import MlpServiceSDK
 from pydantic import BaseModel
 from typing import List
-from src.model import chain, generate_answer
+from model import chain, generate_answer
 class SpanModel(BaseModel):
     start_index: int
     end_index: int
